@@ -18,6 +18,57 @@
                         <td><input type="password" name="pwd"></td>
                        </tr>
                        <tr>
+                        <td>Gender</td>
+                        <td>
+                            <label><input type="radio" name="gender" checked value="Male">Male</label>
+                            <label><input type="radio" name="gender" value="Female">Female</label>
+                            <label><input type="radio" name="gender" value="Other">Other</label>
+                        </td>
+                       </tr>
+                       <tr>
+                        <td>Subject</td>
+                        <td>
+                            <label><input type="checkbox" name="sub" checked value="fsd">fsd</label>
+                            <label><input type="checkbox" name="sub"  value="python">python</label>
+                            <label><input type="checkbox" name="sub"  value="de">de</label>
+
+                        </td>
+                       </tr>
+                            <td>Price</td>
+                            <td>0 <input type="range" min="0" max="1000" step="100" oninput="num.value=this.value">1000
+                                    <input type="text" disabled id="num">
+                            </td>
+                       <tr>
+                        <tr>
+                            <td>Upload CV</td>
+                            <td><input type="file" multiple></td>   
+                        </tr>
+                        <tr>
+                            <td>image works as submit</td>
+                            <td><input type="image" src="abc.png" height="" width=""></td>
+                        </tr>
+                        <tr>
+                            <td>calendar</td>
+                            <td> <input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="area">
+                                    <option selected disabled>Select Area</option>
+                                    <optgroup label="Ahmedabad">
+                                        <option value="maninagar">maninagar</option>
+                                        <option value="bopal">bopal</option>
+                                        <option value="ranip">ranip</option>
+                                    </optgroup>
+                                    <optgroup label="Gandhinagar">
+                                        <option value="sec-1">sec-1</option>
+                                        <option value="sec-2">sec-2</option>
+                                        <option value="sec-2">sec-2</option>
+                                    </optgroup>
+                                </select>
+                            </td>
+                            
+                        </tr>
                         <td>
                             <input type="submit">
                         </td>

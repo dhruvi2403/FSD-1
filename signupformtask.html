@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>
+            signup form
+        </title>
+    </head>
+    <body bgcolor="WhiteSmoke">
+        <form action="#" method="get"></form>
+        <fieldset>
+        <legend>Signup</legend>
+        <table align="left" >
+            <tr>
+                <td>User name</td>
+                <td><input type="text" placeholder="EnterName" name="fname"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" placeholder="Enter Password" name="pwd"></td>
+            </tr>
+            <tr>
+                <td>Birth Date</td>
+                <td><input type="date"></td>
+                
+            </tr>
+            <tr>
+                <td>Contact Number</td>
+                <td><input type="text" name="cno"></td>
+            </tr>
+            <tr>
+                <td>Email ID</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" checked value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                    <input type="radio" name="gender" value="other">Other
+
+                </td>
+            </tr>
+            <tr>
+                <td>Semester</td>
+                <td><input type="number" min="1" max="6"></td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input type="range" min="20" max="70" step="1" oninput="num.value=this.value">
+                
+                </td>
+            </tr>
+            <tr>
+                <td>your Age</td>
+                <td><input type="text" disabled id="num">
+                </td>
+            </tr>
+            <tr>
+                <td>Location</td>
+                <td>
+                    <select name="city" >
+                    <option selected disabled hidden>--Select City--</option>
+                    <b><optgroup label="GUJARAT"></b>
+                        <option value="ahmedabad">Ahmedabad</option>
+                        <option value="gandhinagar">Gandhinagar</option>
+                        <option value="surat">Surat</option>
+
+                    </optgroup>
+                    <b><optgroup label="MAHARASHTRA"></b>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="pune">Pune</option>
+                    <option value="kohlapur">Kohlapur</option>
+
+                    </optgroup>
+
+                    </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Area of Interest</td>
+                <td>
+                    <input type="checkbox" value="ds">DS
+                    <input type="checkbox" value="dbms">DBMS
+                    <input type="checkbox" checked value="Full Stack">Full Stack
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea rows="6" cols="20">This has to erase manually</textarea></td>
+            </tr>
+            <tr>
+                <td>Upload CV</td>
+                <td><input type="file" multiple></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit">
+                </td>
+                <td><input type="reset"></td>
+            </tr>
+        </table>
+        </fieldset>
+    </body>
+</html>

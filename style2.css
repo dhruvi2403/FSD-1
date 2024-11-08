@@ -1,0 +1,66 @@
+.a{
+    background-color: aquamarine;
+    text-indent: 0px;
+    text-decoration: none;
+    text-transform:none;
+    /* letter-spacing:0px; */
+    text-align: left;
+    font-family: "Times New Roman";
+    font-style: none;
+    font-weight: bold;
+    font-variant: normal;
+    font-size: xx-small
+  }
+.b{
+    background-color: bisque;
+    text-indent: 10px;
+    text-decoration:underline double blue 2px;
+    text-transform:uppercase;
+    /* letter-spacing:10px; */
+    text-align: right;
+    font-family: "Helvetica";
+    font-style: italic;
+    font-weight: bold;
+    font-variant: normal;
+    font-size: small
+}
+.c{
+    background-color: rgb(231, 55, 55);
+    text-indent: -5px;
+    text-decoration:overline;
+    text-transform:lowercase;
+    /* letter-spacing:20%; wont work...*/
+    /* letter-spacing: 20em; */
+    text-align: center;
+    font-family: "Papyrus";
+    font-style: none;
+    font-weight: none;
+    font-variant: normal;
+    font-size: medium
+
+}
+.d{
+    background-color: pink;
+    text-indent: 20%;
+    text-decoration:underline overline;
+    text-transform:capitalize;
+    /* letter-spacing:-5px; */
+    text-align: justify;
+    font-family: serif;
+    font-style: none;
+    font-weight: bold;
+    font-variant: normal;
+    font-size: large
+}
+.e{
+    background-color: rgb(47, 212, 204);
+    text-indent: -2em;
+    text-decoration:line-through;
+    /* letter-spacing:-1em; */
+    text-align: left;
+    font-family:sans-serif;
+    font-style: none;
+    font-weight: bold;
+    font-variant: normal;
+    font-size: xx-large
+}

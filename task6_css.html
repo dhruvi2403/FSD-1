@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>pseudo elements</title>
+        <style>
+            .a::first-line{font-variant: small-caps;
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+                            font-weight:bold               
+            }
+            p::first-letter{color:red;font-size:30px}
+            h3::before{content: "#####";}
+            h3::after{content: "#####";}
+            ::marker{color:red}
+            ::selection{color:green;background-color:yellow;}
+            h1{
+                text-align:center
+            }
+            .a1 li::marker{
+                color:tomato;
+                content:"#"
+            }
+
+        </style>
+    </head>
+    <body>
+        <div><h1>pseudo elements</h1></div>
+        <h3> ...5 times "#" Applied after and before content of h3 tag syntax h3::before{content:"#####"}...</h3>
+        <h2>Marker effect</h2>
+        <ul>
+            <li>ABC</li>
+            <li>PQR</li>
+            <li>XYZ</li>
+        </ul>
+        <ol start="1">
+            <li>ABC</li>
+            <li>PQR</li>
+            <li>XYZ</li>
+        </ol>
+        <ul class="a1">
+            <li>html</li>
+            <li>css</li>
+            <li>js</li>
+        </ul>
+        <h4>Selection Effect</h4>
+        <h5>Example of selection pseudo element</h5>
+        <p>Select Any Text on this page with first letter effect</p>
+        <p class="a">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum quibusdam, possimus natus enim mollitia rerum provident consectetur sed iure, optio nisi praesentium dolorem recusandae quisquam at commodi laboriosam adipisci voluptate, quidem blanditiis porro pariatur incidunt! Explicabo quisquam consequatur natus fugit? Id tempore sapiente vitae veniam accusantium soluta repellat perferendis! Enim.</p>
+    </body>
+</html>

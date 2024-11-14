@@ -1,0 +1,6 @@
+body{margin:100px}
+.parent{width:500px;border:1px solid red;margin:auto;text-align:center}
+.c1{background-color: powderblue;border-radius: 10%;width:100px;height:100px;margin:20px;position:static;top:50px;left:50px}
+.c2{background-color: violet;border-radius: 10%;width:100px;height:100px;margin:20px;position:fixed;top:350px;left:340px}
+.c3{background-color: limegreen;border-radius: 10%;width:100px;height:100px;margin:20px;position:absolute;left:340px;top:350px}
+.c4{background-color: pink;border-radius: 10%;width:100px;height:100px;margin:20px;position:relative;left:40px;top:50px}

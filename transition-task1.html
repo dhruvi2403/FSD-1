@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+            .a1{
+                width:200px;
+                height:50px;
+                background-color: rgb(83, 182, 228);
+                border: 1px solid rgb(0, 0, 0);
+                transition-property: width,height,background-color;
+                transition-duration: 5s,2s;
+                transition-delay: 1s;
+            }
+            .a1:hover{
+                width:400px;
+                height: 100px;
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hover to text box to see effect of height, width, background-color</h1>
+        <div >
+            <label >Uname:
+            <input class="a1" type="text" placeholder="Enter name"></label>
+                
+            <br>
+            <br>
+            Password:
+            <input class="a1" type="password" placeholder="password required">
+            <br>
+            <br>
+            <input class="a1" type="submit" >
+            <input class="a1" type="reset" >
+        </div>
+    </body>  
+</html>

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <style>
+            div{
+                height:200px;
+                width:300px;
+                float:left;
+                border:1px solid blue;
+                margin:10px;
+                padding:10px;
+                position:relative;
+            }
+            .p1{
+                background-image: conic-gradient(red,blue,tomato);
+            }
+            .p2{
+                background-image: conic-gradient(red 45deg,blue 180deg,tomato 210deg);
+            }
+            .p3{
+                background-image: conic-gradient(from 90deg,red,blue,tomato);
+            }
+            .p4{
+                background-image: conic-gradient(-30deg,red,blue,tomato);
+            }
+            .p5{
+                background-image: conic-gradient(red 10%,blue 40%,tomato 50%);/*last ma % add karvathi different result*/
+            }
+            .p6{
+                background-image:repeating-conic-gradient(red 10%,blue 20%,tomato 20%);
+            }
+            .pie{
+                background-image: conic-gradient(red 0deg,red 90deg,green 90deg,green 180deg,yellow 180deg, yellow 270deg,blue 270deg);
+                /* border-radius: 150px; */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="p1">conic gradient 1</div>
+        <div class="p2">conic gradient 2</div>
+        <div class="p3">conic gradient 3</div>
+        <div class="p4">conic gradient 4</div>
+        <div class="p5">conic gradient 5</div>
+        <div class="p6">conic gradient 6</div>
+        <div class="p7">conic gradient 7</div>
+        <div class="p8">conic gradient 8</div>
+        <div class="pie">pie chart</div>
+
+    </body>
+</html>

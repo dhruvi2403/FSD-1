@@ -7,9 +7,10 @@
                 background-color: lightskyblue;
                 animation-name: animate1;
                 animation-duration: 5s;
-                animation-delay: 2s;
-                animation-direction: alternate-reverse;
+                animation-delay: 1s;
+                animation-direction: normal;
                 animation-iteration-count: 1;
+                position:absolute;
             }
             @keyframes animate1{
                 /* from {
@@ -18,9 +19,13 @@
                 to{
                     background-color: burlywood;
                 } */
-                0%{background-color: lightskyblue;}
-                50%{background-color: burlywood;}
-                100%{background-color: green;}
+                0%{background-color: lightskyblue;top:0px;left:0px}
+                25%{background-color: burlywood;top:0px;left:300px}
+                50%{background-color: green;top:300px;left:300px}
+                75%{background-color: violet;top:300px;left:0px}
+                100%{background-color: darkred;top:0px;left:0px}
+                
+
             }
         </style>
     </head>

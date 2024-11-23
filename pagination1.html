@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <style>
+            .pagination{
+                display:inline-block;
+            }
+            .pagination a{
+                text-decoration: none;
+                color: black;
+                padding: 20px;
+            }
+            a.active{
+                background-color: green;
+                color:white;
+            }
+            /* a:hover{
+                color:hotpink;
+                font-size: large;
+                font-weight: bold;
+            } */
+             a:hover:not(.active){
+                background-color: yellow;
+                color: red;
+                font-size:large;
+             }
+        </style>
+    </head>
+    <body>
+        <div class="pagination">
+            <a href="#">&laquo</a>
+            <a class="active" href="luck.png">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">&raquo</a>
+
+        </div>
+    </body>
+</html>

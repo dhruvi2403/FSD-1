@@ -1,0 +1,45 @@
+<!-- write a html and css code to design signup form haivng fields like:
+  username, password, checkbox for sports, gender field,submit and reset button perform below actions:
+  1.while hovering of username and password, its background should turn into yellow and pink respectively
+  2.while clicking on sports and gender fields,color of text should turn red
+  3.while hovering submit and reset button, color should turn into blue
+use appropiate selectors to complete the task.-->
+
+<html>
+    <head>
+        <style>
+            input[type=text]:hover{
+                background-color: yellow;
+
+            }
+           input[type=password]:hover{
+                background-color: pink;
+           }
+           .a:active{color:red}
+           .b:hover{color:blue}
+        </style>
+    </head>
+    <body>
+        <form>
+            Username:
+            <input type="text">
+            <br>
+            Password:
+            <input type="password">
+            <br>
+            Sports:
+            <label class="a"><input type="checkbox" name="sport">Cricket</label>
+            <label class="a"><input type="checkbox" name="sport">Hockey</label>
+            <br>
+            Gender:
+            <label class="a"><input type="radio" checked value="male">Male</label>
+            <label class="a"><input type="radio" value="Female">Female</label>
+            <br>
+            <br>
+            <input type="submit" class="b">
+            <input type="reset" class="b">
+
+        </form>
+    </body>
+</html>
+

@@ -1,0 +1,18 @@
+<!-- write JS to find position of first occurance of vowel "a" and the last occurance of 
+ vowel "a" in given word "ajanta" also return string between them -->
+<html>
+    <head>
+        <script>
+            var s="ajanta"
+            var first_oc = s.indexOf("a")
+            var last_oc = s.lastIndexOf("a")
+            var result = s.substring(first_oc+1,last_oc)
+            var result1 = s.substr(first_oc+1,last_oc-1)
+            document.write(first_oc+"<br>")
+            document.write(last_oc+"<br>")
+            document.write(result+"<br>")
+            document.write(result1+"<br>")
+
+        </script>
+    </head>
+</html>

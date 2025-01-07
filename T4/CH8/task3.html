@@ -1,0 +1,20 @@
+<!-- wap to construct function which calculates no.of days are remaining in your upcoming birthday in current year -->
+ <html>
+    <head>
+        <script>
+            function dd(d1,d2){ 
+                od=24*60*60*1000
+                d1_ms=d1.getTime()
+                d2_ms=d2.getTime()
+                dd_ms=Math.abs(d1_ms-d2_ms)
+                return(Math.round(dd_ms/od))
+            }
+            var md1=new Date()
+            md1.setDate(24)
+            md1.setMonth(3)
+
+            var md2=new Date()
+            document.write("no of days left="+dd(md1,md2))
+        </script>
+    </head>
+ </html>

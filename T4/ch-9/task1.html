@@ -1,0 +1,25 @@
+<!-- writ a js to change text color and background color onclick using tagname method -->
+ <html>
+    <head>
+        <script>
+            function func(){
+                var x = document.getElementsByTagName("p")
+                 
+                 for(var i=0;i<x.length;i++){
+                x[i].innerHTML="hello"
+                x[i].style.backgroundColor="red"
+                x[i].style.color="white"
+            } 
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <p>hi</p>
+        <p>hi</p>
+        <p>hi</p>
+        <input type="button" value="clickme" onClick="func()">
+        
+    </body>
+ </html>

@@ -1,0 +1,20 @@
+<!-- write a js code to convert lowercase and upercase from        text on click -->
+ <html>
+    <head>
+        <script>
+            function upper(){
+                var x = document.getElementsByTagName('pre')
+                x[0].style.textTransform="uppercase"
+            }
+            function lower(){
+                var x = document.getElementsByTagName('pre')
+                x[0].style.textTransform="lowercase"
+            }
+        </script>
+    </head>
+    <body>
+        <pre>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam optio quam ducimus eius amet dolores sit culpa eligendi ullam earum.</pre>
+        <input type="button" value="click for upper" onClick="upper()">
+        <input type="button" value="click for lower" onClick="lower()">
+    </body>
+ </html>

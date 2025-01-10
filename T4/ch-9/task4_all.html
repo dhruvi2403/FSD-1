@@ -1,0 +1,27 @@
+<!-- writ a js to change text color and background color onclick using classname method -->
+<html>
+  <head>
+    <script>
+      var ischanged = false
+      function func() {
+        var a = document.getElementsByClassName('p1')
+        var b = document.getElementById('id1')
+        var c = document.getElementsByTagName('p')
+
+       a.innerHTML="change by id"
+       for(i=0;i<b.length;i++){
+
+       }
+      }
+    </script>
+  </head>
+  <body>
+    
+    <p>p tag-3</p>
+    <p  id="id1">p tag 2</p>
+    <p class="p1">p tag 3</p>
+    
+    <!-- <pre >  hi</pre> -->
+    <input type="button" value="clickme" onClick="func()" />
+  </body>
+</html>

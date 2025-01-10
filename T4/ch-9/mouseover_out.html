@@ -1,0 +1,23 @@
+<html>
+  <head> </head>
+  <body>
+    <!-- <div onmouseover="mdown(this) " onmouseout="mup(this)" style="background-color: cyan;width:70px; height:30px;padding:20px"> -->
+    <div
+      onmouseover="mdown(this) "
+      onmouseout="mup(this)"
+      style="width: 70px; height: 30px; padding: 20px; border: 3px solid black"
+    >
+      click me
+    </div>
+    <script>
+      function mdown(e) {
+        e.style.backgroundColor = 'yellow'
+        e.innerHTML = 'mouse cursor towards '
+      }
+      function mup(e) {
+        e.style.backgroundColor = 'pink'
+        e.innerHTML = 'mouse cursor away'
+      }
+    </script>
+  </body>
+</html>

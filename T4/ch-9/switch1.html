@@ -1,0 +1,17 @@
+<html>
+  <head><script>
+    function fun(e) {
+      var val = e.button
+      if (val == 0) {
+        alert('Left mouse button clicked')
+      } else if (val == 1) {
+        alert('middle mouse button clicked')
+      } else if (val == 2) {
+        alert('right mouse button clicked')
+      }
+    }
+  </script> </head>
+  <body>
+    <div style="width:50%;height:50%;border:2px solid black" onmousedown="fun(event)"></div>
+  </body>
+</html>

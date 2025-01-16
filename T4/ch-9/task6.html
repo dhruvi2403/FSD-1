@@ -9,19 +9,18 @@ background color should change to red after releasing the pressed key  -->
                 document.innerHTML=e.keyCode
                 a=(e.key)
                 if(a=="a" || a=="e" ||a=="i" || a=="o" || a=="u"){
-                    document.write("vowel is pressed")
+                    document.getElementById("i1").innerHTML="vowel is entered"+e.keyCode
                 }
                 else{
-                    document.innerHTML=a
+                    document.getElementById("i1").innerHTML=e.keyCode
                 }
             }
             function fun2(id){
-                id.bgColor="red"
+                document.getElementById("i1").style.backgroundColor="red"
             }
 
         </script>
     </head>
-    <body onkeypress="fun1(event)" onkeydown="fun2(this)">
-        <p id="p1"></p>
+    <body onkeypress="fun1(event)" onkeydown="fun2(this)" id="i1">
     </body>
 </html>

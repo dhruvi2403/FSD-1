@@ -1,0 +1,29 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="#" method="get" onsubmit="fun()">
+            <input type="text"  id="t1">
+            <input type="submit" value="submit">
+        </form>
+    
+              
+        <script>
+            function fun(){
+               //pat=/[abc]/   //checks for individual characters inside []
+               //pat=/[^abc]/    //khali abc nahi chale eni jode biju kai hovu joie
+               //pat=/[0-9]/   koi pan ek number hovo joie
+               pat=/[^0-9]/ 
+               //pat=(x|y)
+               u=document.getElementById("t1").value
+               if(pat.test(u)){
+                alert("perfect and value is"+u)
+               }
+               else{
+                alert("not perfect")
+               }
+            }
+        </script>
+    </body>
+</html>

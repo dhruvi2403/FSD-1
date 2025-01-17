@@ -1,0 +1,25 @@
+<!-- write a html form accepting integers having 4 digits only input should not
+accept characters of letter and special symbol -->
+<html>
+  <head>
+    <script>
+      function f1() {
+        pat = /\d{4}$/
+
+        u = document.getElementById('i1').value
+        if (pat.test(u)) {
+          alert('valid')
+        } else {
+          alert('Invalid!! only enter 4 digits')
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <form action="#" method="get" onsubmit="f1()">
+        <input type="text" id="i1" placeholder="Enter username" />
+        <input type="submit" value="submit" />
+      </form>                    
+  </body>
+</html>

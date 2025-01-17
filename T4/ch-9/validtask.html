@@ -1,0 +1,33 @@
+<!-- pass should be 6-12 char long
+username should not stat with _ @ and any digit
+both field must not be blank -->
+<html>
+  <head> </head>
+  <body>
+    <form action="#" method="get" onsubmit="fun()">
+      <input type="text" id="t1" placeholder="Enter username" />
+      <input type="password" id="t2" placeholder="enter password"/>
+      <input type="submit" value="submit" />
+    </form>
+
+    <script>
+      function fun() {
+        pat1 = / ^_|^@|^\d/
+        u = document.getElementById('t1').value
+        v = document.getElementById("t2").value
+        if(u.length==0||v.length==0){
+            alert("cant be empty")
+        }
+        else if(v.length<6||v.length>12){
+            alert("pass should be 6-12 char long")
+        }
+        else if(pat1.test(u)){
+            alert("dont start the string with _ @ or digits")
+        }
+        else{
+            alert("good password")
+        }
+      }
+    </script>
+  </body>
+</html>

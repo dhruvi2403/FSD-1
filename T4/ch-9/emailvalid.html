@@ -1,0 +1,23 @@
+<!-- college mail validation -->
+<html>
+  <head> </head>
+  <body>
+    <form action="#" method="get" onsubmit="fun()">
+      <input type="text" id="t1" placeholder="Enter mail" />     
+      <input type="submit" value="submit" />
+    </form>
+
+    <script>
+      function fun() {
+        pat1 = /^\d{14}@\w{4}\.\w{3}\.\w{2,3}$/
+        u = document.getElementById('t1').value
+        if(pat1.test(u)){
+            alert("valid email")
+        }
+        else{
+            alert("invalid email retry!!!")
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!-- write ES 6 code to  
+take 1 div with some text and  no decoration. Take a font size 15px and italic style as default style and 
+pass the background color and text color to function
+on button click all the new property will have to set  -->
+
+<html>
+  <head>
+    <script>
+        func1=(bgcolor,textcolor,fontsize='50px',style='italic')=>{
+            document.getElementById("d1").style.background = bgcolor;
+            document.getElementById('d1').style.color=textcolor;
+            document.getElementById('d1').style.fontSize=fontsize;
+            document.getElementById('d1').style.fontStyle=style;
+        }
+    </script>
+  </head>
+  <body>
+    <div id="d1">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id esse
+      blanditiis reprehenderit voluptate. Esse ipsam quod iste illo repellendus
+      expedita magnam praesentium corrupti iusto necessitatibus dignissimos,
+      quae voluptatum quaerat eos vero eius nemo sapiente harum suscipit
+      asperiores mollitia aut! Vel!
+      <button class="btn1" onclick="func1('tomato','purple')">click me</button>
+
+    </div>
+  </body>
+</html>

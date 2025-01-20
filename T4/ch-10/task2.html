@@ -1,0 +1,33 @@
+<!-- to display form elements value fname,lname,gender and selected game on submit -->
+ <html>
+    <head>
+        <script>
+            function f1(){
+                var fname = document.getElementById("f").value;
+                var lname = document.getElementById("l").value;
+                var gen=document.getElementById("g").value;
+                d=document.getElementById('d');
+                d.innerHTML('first name='+fname+" "+"last name="+lname+" "+"gender="+gen+" ")
+            }
+        </script>
+    </head>
+    <body>
+        <form action="" method="get">
+            firstname:
+            <input type="text" name="fn" id="f">
+            lastname:
+            <input type="text" name="ln" id="l">
+            gender:
+            <input type="radio" name="gender" value="male" id="g">male
+            <input type="radio" name="gender" value="female" id="g">female
+
+            select game:
+            <input type="checkbox" name="game" checked value="football" id="gam">football
+            <input type="checkbox" name="game"  value="cricket" id="gam">cricket
+            <input type="checkbox" name="game"  value="basketball" id="gam">basketball
+
+            <input type="submit"  onclick="f1()" name="" id="">
+        </form>
+        <p id="d"></p>
+    </body>
+ </html>

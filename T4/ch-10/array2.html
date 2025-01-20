@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            function f1(){
+                const n1=[23,55,21,87,56]
+                const n2=[12,34,56,78,90]
+                const fnum=[...n1,...n2]
+                let maxvalue=Math.max(...fnum) //if we remove '...' from here then, it will give output: NaN (meaning  not a number) 
+                //because maxvalue will store '[]' 
+                console.log(fnum)
+                console.log(...fnum)
+                document.getElementById("demo").innerHTML=maxvalue
+
+            }
+        </script>
+    </head>
+    <body>
+        
+        <p onclick="f1()">
+            maxvalue from the above array is=
+        </p>
+        <p id="demo"></p>
+    </body>
+</html>

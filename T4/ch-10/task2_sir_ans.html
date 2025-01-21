@@ -1,0 +1,45 @@
+<html> 
+    <head>
+        <script>
+            function f1()
+            {
+            uname=document.form1.uname.value;
+            lname=document.form1.lname.value;
+            rad=document.getElementsByName("r1");
+            for(i=0;i<rad.length;i++)
+            {
+                if(rad[i].checked==true)
+                {
+                    gender= rad[i].value;
+                }
+            }
+            hobby=document.getElementsByName("ch1");
+            var hob="";
+            for(j=0;j<hobby.length;j++)
+            {
+                if(hobby[j].checked)
+                {
+                    hob = hob + " " + hobby[j].value ;
+                
+                }
+            }
+            document.write("Uname:"+uname);
+            document.write("<br>lname:"+lname);
+            document.write("<br>"+ gender);
+            document.write( "<br>Hobby:" + hob );
+            }
+</script>
+ </head> 
+    <body>
+        <form name="form1" method="get">
+        <input type="text" id="uname" name="uname"/></br>
+        <input type="text" id="lname" name="lname"/></br>
+        <input type="radio" name="r1" value="male"/>male
+        <input type="radio" name="r1" value="female"/>female
+        <input type="checkbox" name="ch1" value="cricket"/> cricket
+        <input type="checkbox" name="ch1" value="football"/> football
+        <input type="checkbox" name="ch1" value="basketball"/>basketball
+        <input type="submit" onclick="f1()">
+        </form>
+    </body>
+ </html>

@@ -6,8 +6,11 @@
                 var fname = document.getElementById("f").value;
                 var lname = document.getElementById("l").value;
                 var gen=document.getElementById("g").value;
-                d=document.getElementById('d');
-                d.innerHTML('first name='+fname+" "+"last name="+lname+" "+"gender="+gen+" ")
+                var gam=document.getElementById("gam").value;
+
+                // // d=document.getElementById('d');
+                // document.getElementById('d').innerHTML='first name='+fname+" "+"last name="+lname+" "+"gender="+gen+" "
+                document.write('first name='+fname+" <br>" +"last name="+lname+"<br> "+"gender="+gen+"<br> "+"game="+gam)
             }
         </script>
     </head>
@@ -26,7 +29,7 @@
             <input type="checkbox" name="game"  value="cricket" id="gam">cricket
             <input type="checkbox" name="game"  value="basketball" id="gam">basketball
 
-            <input type="submit"  onclick="f1()" name="" id="">
+            <input type="submit"  onclick="f1()">
         </form>
         <p id="d"></p>
     </body>
